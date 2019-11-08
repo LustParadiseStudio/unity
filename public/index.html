@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | painel</title>
+    
+    <link rel="stylesheet" href="https://xdgamestudio.com/sandbox/Build/style.css">
+    <script src="https://xdgamestudio.com/sandbox/Build/UnityLoader.js"></script>
+    <script src="https://xdgamestudio.com/sandbox/Build/GameUtility.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "https://xdgamestudio.com/sandbox/Build/Build.json");
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content" style="max-width: 940px;">
+      <button class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></button>
+      <div id="unityContainer"></div>
+    </div>
+  </body>
+</html>
