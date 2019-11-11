@@ -1,0 +1,27 @@
+.fullscreen {
+    position: absolute;
+    float: left;
+    
+    width: 38px; 
+    height: 38px;
+
+    margin: 10px;
+    padding: 0;
+    border: 0;
+    background-image: url('fullscreen.png');
+    z-index: 999;
+}
+
+#unityContainer {
+    padding: 0;
+    margin: 0;
+
+    padding: 0px; 
+    margin: 0px; 
+    border: 0px none; 
+    position: relative;
+}
+
+.webgl-content {
+    margin: 0 auto;
+}
