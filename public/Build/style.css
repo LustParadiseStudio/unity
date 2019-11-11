@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+#webgl-content {
+    position: relative;
+    margin: 0 auto;
+
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
 .fullscreen {
     position: absolute;
-    float: left;
+    top: 0;
+    left: 0;
     
     width: 38px; 
     height: 38px;
-
+    
     margin: 10px;
     padding: 0;
     border: 0;
@@ -22,6 +33,70 @@
     position: relative;
 }
 
-.webgl-content {
-    margin: 0 auto;
+#loading-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 172, 78);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#loading-screen img {
+    width: 60%;
+    max-width: 940px;
+}
+
+#progress {
+    position: relative;
+
+    height: 18px; 
+    width: 141px; 
+    margin-top: 30px;
+}
+
+.progress-bar {
+    background: rgba(0, 0, 0, 0) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAAASCAYAAABmbl0zAAAACXBIWXMAAAsSAAALEgHS3X78AAAATUlEQVRo3u3aIQ4AIAwEQUr4/5cPiyMVBDOj0M2mCKgkGdAwjYCudZzLOLiITYPrCdEgGkSDaEA0iAbRIBpEA6JBNHx1vnL7V4NNwxsbCNMGI3YImu0AAAAASUVORK5CYII=") no-repeat scroll right center / cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%; 
+    
+    display: inline-block;
+}
+
+#progress-fill {
+    background: rgba(0, 0, 0, 0) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAAASCAYAAABmbl0zAAAACXBIWXMAAAsSAAALEgHS3X78AAAAO0lEQVRo3u3SQREAAAjDMMC/56EB3omEXjtJCg5GAkyDaTANpsE0YBpMg2kwDaYB02AaTINpMA2Yhr8FO18EIBpZMeQAAAAASUVORK5CYII=") no-repeat scroll left center / cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%; 
+    display: inline-block;
+}
+
+#play-button {
+    height: 33px; 
+    width: 200px; 
+    margin-top: 15px;
+
+    padding: 0;
+    border: 0;
+
+    background-color: rgb(72, 72, 241);
+    color: white;
+
+    border-radius: 5px;
+    border: 3px solid rgb(106, 106, 207);
+}
+
+#play-button:hover {
+    background-color: rgb(56, 56, 121);
 }
