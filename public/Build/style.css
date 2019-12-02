@@ -19,7 +19,7 @@
     margin: 10px;
     padding: 0;
     border: 0;
-    background-image: url('fullscreen.png');
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAAACXBIWXMAAAsSAAALEgHS3X78AAABC0lEQVRYw2OUW3eZgb6AiYHuYNTKUStHrRy1koGBgYUSzRbC3LMt5fhYmZEF5ddfoaEvT7z9GnHk/rXPP+gasFc//Lj69jtdrewxlA5VEKSflcj2rX7wnsgQJj/58LEyawtzQiP1zdeS80/5WJmPuqsR1MjMH55FnpU///3f/PijKBsLIzNj3NGHP//9//nv/6FXX17/+INfI+NgbxWgZUFaWaktwAG3b6W9Yo+hNIUWE7ZyhY0iHyszxD4tXo5QBcGV9oq0LfAgljEwMGjxQr1Lat4nJ5PALYPkv5LzT+mXfCi3j2QrtYU54amJTlZq8XKssFG0EOambVwSrP9GGyKjVo5aOWrl0LASABsZTYue2xSgAAAAAElFTkSuQmCC');
     z-index: 999;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .progress-bar {
-    background: rgba(0, 0, 0, 0) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAAASCAYAAABmbl0zAAAACXBIWXMAAAsSAAALEgHS3X78AAAATUlEQVRo3u3aIQ4AIAwEQUr4/5cPiyMVBDOj0M2mCKgkGdAwjYCudZzLOLiITYPrCdEgGkSDaEA0iAbRIBpEA6JBNHx1vnL7V4NNwxsbCNMGI3YImu0AAAAASUVORK5CYII=") no-repeat scroll right center / cover; 
+    background:transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAAASCAYAAABmbl0zAAAACXBIWXMAAAsSAAALEgHS3X78AAAATUlEQVRo3u3aIQ4AIAwEQUr4/5cPiyMVBDOj0M2mCKgkGdAwjYCudZzLOLiITYPrCdEgGkSDaEA0iAbRIBpEA6JBNHx1vnL7V4NNwxsbCNMGI3YImu0AAAAASUVORK5CYII=") no-repeat scroll right center / cover; 
     position: absolute;
     top: 0;
     left: 0;
@@ -95,8 +95,4 @@
 
     border-radius: 5px;
     border: 3px solid rgb(106, 106, 207);
-}
-
-#play-button:hover {
-    background-color: rgb(56, 56, 121);
 }
